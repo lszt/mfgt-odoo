@@ -2,9 +2,9 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name' : 'MFGT Remove Bank Account Constraint',
-    'version': '12.0.1.0',
-    'website' : 'http://syscoon.com',
+    'name' : 'MFGT Remove Bank Account Constraint (fake)',
+    'version': '16.0.1.0',
+    'website' : 'https://mfgt.ch',
     'category': 'Account',
     'description': """
 Removes Constraint for Bank Account on BVR-Payment

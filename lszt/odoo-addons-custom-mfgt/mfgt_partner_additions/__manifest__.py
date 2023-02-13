@@ -3,8 +3,8 @@
 
 {
     'name' : 'MFGT Partner Enhancement',
-    'version': '12.0.1.0',
-    'website' : 'http://syscoon.com',
+    'version': '16.0.1.0',
+    'website' : 'https://mfgt.ch',
     'category': 'Sales',
     'description': """
 Enhances Partner with several fields.

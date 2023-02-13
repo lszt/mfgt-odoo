@@ -7,7 +7,7 @@
     'category': 'Hidden/Dependency',
     'depends' : [
             ],
-    'description': 'A dummy module for updating'
+    'description': 'A dummy module for updating',
     'data': [
     ],
     'installable': True,

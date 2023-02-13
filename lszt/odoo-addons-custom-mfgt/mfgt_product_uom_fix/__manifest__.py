@@ -2,18 +2,10 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name' : 'MFGT Product uom fix',
-    'version': '12.0.1.0',
-    'website' : 'http://syscoon.com',
+    'name' : 'MFGT Product uom fix (dummy)',
+    'version': '16.0.1.0',
+    'website' : 'https://mfgt.ch',
     'category': 'Sales',
-    'description': """
-Fixed the problem to change an product unit after it has been already used in an account journal item
-    """,
-    'depends' : [
-        'account',
-        'product',
-        'stock',
-    ],
     'data': [
     ],
     'installable': True,

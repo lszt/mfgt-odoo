@@ -3,7 +3,7 @@
 
 {
     'name' : 'MFGT: ISO11649 QR invoice',
-    'version': '12.0.0.0',
+    'version': '16.0.0.0',
     'website' : 'http://mfgt.ch',
     'category': 'Hidden/Dependency',
     'depends' : [
@@ -16,4 +16,5 @@ Automatically create structured reference for QR invoice.
     ],
     'installable': True,
     'auto_install': False,
+    'external_dependencies': {'python' : ['stdnum']},
 }

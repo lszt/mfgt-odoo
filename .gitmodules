@@ -1,53 +1,5 @@
-[submodule "OCA/l10n-switzerland"]
-	path = OCA/l10n-switzerland
-	url = git@github.com:lszt/l10n-switzerland.git
-	branch = 12.0-mfgt
-
-[submodule "OCA/web"]
-	path = OCA/web
-	url = git@github.com:OCA/web.git
-	branch = 12.0
-
-[submodule "OCA/bank-payment"]
-	path = OCA/bank-payment
-	url = git@github.com:OCA/bank-payment.git
-	branch = 12.0
-
-[submodule "OCA/bank-statement-import"]
-	path = OCA/bank-statement-import
-	url = git@github.com:OCA/bank-statement-import.git
-	branch = 12.0
-
-[submodule "OCA/bank-statement-reconcile"]
-	path = OCA/bank-statement-reconcile
-	url = git@github.com:OCA/bank-statement-reconcile.git
-	branch = 12.0
-
-[submodule "OCA/hr-timesheet"]
-	path = OCA/hr-timesheet
-	url = git@github.com:OCA/hr-timesheet.git
-	branch = 12.0
-
 [submodule "OCA/partner-contact"]
 	path = OCA/partner-contact
 	url = git@github.com:OCA/partner-contact.git
 	branch = 12.0
 
-[submodule "OCA/server-tools"]
-	path = OCA/server-tools
-	url = git@github.com:OCA/server-tools.git
-	branch = 12.0
-
-[submodule "OCA/stock-logistics-warehouse"]
-	path = OCA/stock-logistics-warehouse
-	url = git@github.com:OCA/stock-logistics-warehouse.git
-	branch = 12.0
-
-[submodule "OCA/edi"]
-	path = OCA/edi
-	url = git@github.com:OCA/edi.git
-	branch = 12.0
-[submodule "OCA/community-data-files"]
-	path = OCA/community-data-files
-	url = git@github.com:OCA/community-data-files.git
-	branch = 12.0

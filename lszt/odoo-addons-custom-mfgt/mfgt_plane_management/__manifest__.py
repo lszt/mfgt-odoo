@@ -3,7 +3,7 @@
 
 {
     'name' : 'MFGT Plane Management',
-    'version': '12.0.1.6',
+    'version': '16.0.1.0',
     'website' : 'https://mfgt.ch',
     'category': 'Sales',
     'description': """

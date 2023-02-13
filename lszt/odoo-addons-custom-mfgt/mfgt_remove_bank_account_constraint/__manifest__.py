@@ -4,6 +4,7 @@
 {
     'name' : 'MFGT Remove Bank Account Constraint (fake)',
     'version': '16.0.1.0',
+    'author': 'Motorfluggruppe Thurgau MFGT',
     'website' : 'https://mfgt.ch',
     'category': 'Account',
     'description': """

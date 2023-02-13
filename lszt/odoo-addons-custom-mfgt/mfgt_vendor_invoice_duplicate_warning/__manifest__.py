@@ -4,6 +4,7 @@
 {
     'name' : 'MFGT Vendor Invoice Reference Warning (dummy)',
     'version': '16.0.1.0',
+    'author': 'Motorfluggruppe Thurgau MFGT',
     'website' : 'https://mfgt.ch',
     'category': 'Accounting',
     'description': """

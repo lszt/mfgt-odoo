@@ -4,6 +4,7 @@
 {
     'name' : 'MFGT: ISO11649 QR invoice',
     'version': '16.0.0.0',
+    'author': 'Motorfluggruppe Thurgau MFGT',
     'website' : 'http://mfgt.ch',
     'category': 'Hidden/Dependency',
     'depends' : [

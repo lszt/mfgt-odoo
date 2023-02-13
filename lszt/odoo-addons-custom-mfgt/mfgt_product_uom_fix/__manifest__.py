@@ -4,6 +4,7 @@
 {
     'name' : 'MFGT Product uom fix (dummy)',
     'version': '16.0.1.0',
+    'author': 'Motorfluggruppe Thurgau MFGT',
     'website' : 'https://mfgt.ch',
     'category': 'Sales',
     'data': [

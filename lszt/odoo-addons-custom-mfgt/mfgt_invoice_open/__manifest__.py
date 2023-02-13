@@ -2,19 +2,10 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name' : 'MFGT Set Invoice back to Open',
-    'version': '12.0.1.0',
-    'website' : 'http://syscoon.com',
+    'name' : 'MFGT Set Invoice back to Open (dummy)',
+    'version': '16.0.1.0',
+    'website' : 'https://mfgt.ch',
     'category': 'Accounting',
-    'description': """
-Mangemant Tool for Aircraft Planes
-    """,
-    'depends' : [
-        'account'
-    ],
-    'data': [
-        'views/account_invoice.xml',
-    ],
     'installable': True,
     'auto_install': False,
 }

@@ -17,5 +17,5 @@ Automatically create structured reference for QR invoice.
     ],
     'installable': True,
     'auto_install': False,
-    'external_dependencies': {'python' : ['stdnum']},
+    'external_dependencies': {'python' : ['python-stdnum']},
 }

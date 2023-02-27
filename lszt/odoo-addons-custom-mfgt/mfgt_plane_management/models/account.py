@@ -4,17 +4,16 @@
 from odoo import models, fields, api
 
 
-class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+class AccountMove(models.Model):
+    _inherit = 'account.move'
 
     sale_id = fields.Many2one('sale.order', compute='_select_sale_order', string='Sale Order', store=True)
     plane_id = fields.Many2one('mfgt.plane.management', string='Plane', readonly=True, states={'draft': [('readonly', False)]})
 
-    @api.depends('origin')
-    @api.multi
+    @api.depends('invoice_origin')
     def _select_sale_order(self):
         for rec in self:
-            if rec.origin:
-                sale_order = self.env['sale.order'].search([('name', '=', rec.origin)])
+            if rec.invoice_origin:
+                sale_order = self.env['sale.order'].search([('name', '=', rec.invoice_origin)])
                 if sale_order:
                     rec.sale_id = sale_order[0].id

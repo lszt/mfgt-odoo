@@ -19,6 +19,7 @@ class MFGTMinorChangeApprovals(models.Model):
     name = fields.Char('Name', required=True)
     description = fields.Char('Description', required=True)
 
+
 class MFGTPlaneManagement(models.Model):
     _name = 'mfgt.plane.management'
     _description = 'Plane Management'
@@ -36,7 +37,6 @@ class MFGTPlaneManagement(models.Model):
     construction_year = fields.Char('Construction Year', required=True)
     tcds_no = fields.Char('TCDS No.', required=True)
     legal_base = fields.Char('Legal Base', required=True)
-    registration = fields.Char('Registration', required=True)
     commercial_use = fields.Selection([('yes', 'Yes'), ('no', 'No')], string='Commercial Use', required=True)
     noise_level = fields.Char('Noise Level', required=True)
     noise_rate_class = fields.Char('Noise Rate Class', required=True)
@@ -55,7 +55,8 @@ class MFGTPlaneManagement(models.Model):
     propeller_construction_year = fields.Char('Construction Year', required=True)
     propeller_tcds_no = fields.Char('TCDS No.', required=True)
 
-    supplement_type_certificate_ids = fields.Many2many(comodel_name='mfgt.plane.stc', string='Supplement Type Certificate')
+    supplement_type_certificate_ids = fields.Many2many(comodel_name='mfgt.plane.stc',
+                                                       string='Supplement Type Certificate')
 
     minor_change_approval_ids = fields.Many2many(comodel_name='mfgt.plane.mca', string='Minor Change Aproval')
 
@@ -66,14 +67,15 @@ class MFGTPlaneManagement(models.Model):
     next_service = fields.Date('Next Service')
     next_service_type = fields.Char('Service Type')
     arc_expiration = fields.Date('ARC Expiration')
-    next_arc_type = fields.Selection([('fr','Full Review'),('ext1','1st Extension'),('ext2','2nd Extension')],'Next ARC Type')
+    next_arc_type = fields.Selection([('fr', 'Full Review'), ('ext1', '1st Extension'), ('ext2', '2nd Extension')],
+                                     'Next ARC Type')
     last_arc_date = fields.Date('Last ARC')
     last_arc_report = fields.Char('Last ARC Report')
     camo_managed = fields.Boolean('CAMO managed')
 
     technical_contact_id = fields.Many2one('res.partner', string='Technical Contact')
     technical_contact_phone = fields.Char(related='technical_contact_id.phone', string='Phone')
-    technical_contact_phone_company = fields.Char(related='technical_contact_id.phone_company', string='Phone Company')
+    technical_contact_phone_company = fields.Char(related='technical_contact_id.company_id.phone',
+                                                  string='Phone Company')
     technical_contact_mobile = fields.Char(related='technical_contact_id.mobile', string='mobile')
     technical_contact_email = fields.Char(related='technical_contact_id.email', string='Email')
-

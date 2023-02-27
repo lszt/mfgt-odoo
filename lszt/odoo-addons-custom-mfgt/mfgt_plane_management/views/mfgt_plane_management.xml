@@ -3,22 +3,22 @@
     <data>
 
         <menuitem
-            id="menu_mfgt_plane_management"
-            parent="sale.sale_menu_root"
-            name="Plane Mangement"
-            groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
+                id="menu_mfgt_plane_management"
+                parent="sale.sale_menu_root"
+                name="Plane Mangement"
+                groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
 
         <menuitem
-            id="menu_mfgt_plane_management_control"
-            parent="mfgt_plane_management.menu_mfgt_plane_management"
-            name="Mangement"
-            groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
+                id="menu_mfgt_plane_management_control"
+                parent="mfgt_plane_management.menu_mfgt_plane_management"
+                name="Mangement"
+                groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
 
         <menuitem
-            id="menu_mfgt_plane_management_settings"
-            parent="mfgt_plane_management.menu_mfgt_plane_management"
-            name="Settings"
-            groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
+                id="menu_mfgt_plane_management_settings"
+                parent="mfgt_plane_management.menu_mfgt_plane_management"
+                name="Settings"
+                groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
 
         <record id="mfgt_plane_stc_tree_view" model="ir.ui.view">
             <field name="name">mfgt.plane.stc.tree.view</field>
@@ -54,17 +54,16 @@
             <field name="name">Supplement Type Certificates</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">mfgt.plane.stc</field>
-            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
 
         <menuitem
-            id="menu_mfgt_planes_stc"
-            action="action_plane_stc"
-            parent="mfgt_plane_management.menu_mfgt_plane_management_settings"
-            name="Supplement Type Certificates"
-            sequence="20"
-            groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
+                id="menu_mfgt_planes_stc"
+                action="action_plane_stc"
+                parent="mfgt_plane_management.menu_mfgt_plane_management_settings"
+                name="Supplement Type Certificates"
+                sequence="20"
+                groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
 
         <record id="mfgt_plane_mca_tree_view" model="ir.ui.view">
             <field name="name">mfgt.plane.mca.tree.view</field>
@@ -100,17 +99,16 @@
             <field name="name">Minor Change Approvals</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">mfgt.plane.mca</field>
-            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
 
         <menuitem
-            id="menu_mfgt_planes_mca"
-            action="action_plane_mca"
-            parent="mfgt_plane_management.menu_mfgt_plane_management_settings"
-            name="Minor Change Approvals"
-            sequence="30"
-            groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
+                id="menu_mfgt_planes_mca"
+                action="action_plane_mca"
+                parent="mfgt_plane_management.menu_mfgt_plane_management_settings"
+                name="Minor Change Approvals"
+                sequence="30"
+                groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
 
         <record id="mfgt_plane_management_tree_view" model="ir.ui.view">
             <field name="name">mfgt.plane.managment.tree.view</field>
@@ -138,11 +136,12 @@
                 <form string="Plane">
                     <sheet>
                         <div class="oe_button_box" name="button_box">
-                            <button name="toggle_active" type="object"
-                                    class="oe_stat_button" icon="fa-archive">
-                                <field name="active" widget="boolean_button"
-                                    options='{"terminology": "archive"}'/>
-                            </button>
+                            <!--            Function is not available in v12           -->
+                            <!--                            <button name="toggle_active" type="object"-->
+                            <!--                                    class="oe_stat_button" icon="fa-archive">-->
+                            <!--                                <field name="active" widget="boolean_button"-->
+                            <!--                                    options='{"terminology": "archive"}'/>-->
+                            <!--                            </button>-->
                         </div>
                         <div class="oe_title">
                             <h1>
@@ -152,7 +151,7 @@
                         </div>
                         <group>
                             <group string="Owner">
-                                <field name="owner_id" domain="[('customer','=',True)]"/>
+                                <field name="owner_id"/>
                             </group>
                             <group string="Service">
                                 <field name="next_service"/>
@@ -194,20 +193,20 @@
                                         <field name="max_takeoff_weight"/>
                                     </group>
                                     <group>
-                                    <group string="Engine" colspan="4">
-                                        <field name="engine_manufacturer"/>
-                                        <field name="engine_type"/>
-                                        <field name="engine_number"/>
-                                        <field name="engine_construction_year"/>
-                                        <field name="engine_tcds_no"/>
-                                    </group>
-                                    <group string="Propeller" colspan="4">
-                                        <field name="propeller_manufacturer"/>
-                                        <field name="propeller_type"/>
-                                        <field name="propeller_number"/>
-                                        <field name="propeller_construction_year"/>
-                                        <field name="propeller_tcds_no"/>
-                                    </group>
+                                        <group string="Engine" colspan="4">
+                                            <field name="engine_manufacturer"/>
+                                            <field name="engine_type"/>
+                                            <field name="engine_number"/>
+                                            <field name="engine_construction_year"/>
+                                            <field name="engine_tcds_no"/>
+                                        </group>
+                                        <group string="Propeller" colspan="4">
+                                            <field name="propeller_manufacturer"/>
+                                            <field name="propeller_type"/>
+                                            <field name="propeller_number"/>
+                                            <field name="propeller_construction_year"/>
+                                            <field name="propeller_tcds_no"/>
+                                        </group>
                                     </group>
                                 </group>
                                 <group string="Supplement Type Certificates">
@@ -247,17 +246,16 @@
             <field name="name">Planes</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">mfgt.plane.management</field>
-            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
 
         <menuitem
-            id="menu_mfgt_planes"
-            action="action_plane_management"
-            parent="mfgt_plane_management.menu_mfgt_plane_management_control"
-            name="Planes"
-            sequence="10"
-            groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
+                id="menu_mfgt_planes"
+                action="action_plane_management"
+                parent="mfgt_plane_management.menu_mfgt_plane_management_control"
+                name="Planes"
+                sequence="10"
+                groups="sales_team.group_sale_manager,sales_team.group_sale_salesman"/>
 
     </data>
 </odoo>

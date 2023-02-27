@@ -2,13 +2,7 @@
 <odoo>
     <data>
 
-        <template id="mfgt_plane_management_report_assets_common" inherit_id="web.assets_common">
-            <xpath expr="." position="inside">
-                <link href="/mfgt_plane_management/static/src/less/mfgt_report.less" rel="stylesheet"/>
-            </xpath>
-        </template>
-
-        <template id="report_saleorder_document" inherit_id="profile_mfgt.report_saleorder_document">
+        <template id="report_saleorder_document" inherit_id="sale.report_saleorder_document">
             <xpath expr="//div[@id='informations']" position="after">
                 <t t-if="doc.plane_id">
                     <div class="row mt16">

@@ -2,35 +2,20 @@
 <odoo>
     <data>
 
-        <record id="account.account_invoices"
-                model="ir.actions.report">
-            <field name="paperformat_id"
-                   ref="paperformat_a4_din5008"/>
-      </record>
+      <delete id="account.account_invoices"
+              model="ir.actions.report"/>
 
-      <record id="sale.action_report_saleorder"
-              model="ir.actions.report">
-          <field name="paperformat_id"
-                 ref="paperformat_a4_din5008"/>
-      </record>
+      <delete id="sale.action_report_saleorder"
+              model="ir.actions.report"/>
 
-      <record id="purchase.action_report_purchase_order"
-              model="ir.actions.report">
-          <field name="paperformat_id"
-                 ref="paperformat_a4_din5008"/>
-      </record>
+      <delete id="purchase.action_report_purchase_order"
+              model="ir.actions.report"/>
 
-      <record id="purchase.report_purchase_quotation"
-              model="ir.actions.report">
-          <field name="paperformat_id"
-                 ref="paperformat_a4_din5008"/>
-      </record>
+      <delete id="purchase.report_purchase_quotation"
+              model="ir.actions.report"/>
 
-      <record id="account.account_invoices"
-              model="ir.actions.report">
-          <field name="paperformat_id"
-                 ref="paperformat_a4_din5008"/>
-      </record>
+      <delete id="account.account_invoices"
+              model="ir.actions.report"/>
         
     </data>
 </odoo>

@@ -27,8 +27,8 @@
 	'mfgt_plane_management',
     ],
     'data': [
+       'report/reports.xml',
 #       'report/layouts.xml',
-#       'report/reports.xml',
 #       'report/report_saleorder.xml',
 #       'report/report_purchasequotation.xml',
 #       'report/report_purchaseorder.xml',

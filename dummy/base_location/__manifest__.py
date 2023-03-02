@@ -2,7 +2,7 @@
 {
     'name' : 'MFGT Dummy Module',
     'author': 'Motorfluggruppe Thurgau MFGT',
-    'version': '16.99.0.0',
+    'version': '16.0.99.0',
     'website' : 'https://mfgt.ch',
     'category': 'Hidden/Dependency',
     'depends' : [

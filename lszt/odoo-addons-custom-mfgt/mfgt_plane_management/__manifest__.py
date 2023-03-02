@@ -10,7 +10,7 @@
         Management Tool for Aircraft Planes
     """,
     'depends': [
-        'account', 'sale', 'sale_management',
+        'account', 'sale', 'sale_management','profile_mfgt'
     ],
     'data': [
         'security/ir.model.access.csv',

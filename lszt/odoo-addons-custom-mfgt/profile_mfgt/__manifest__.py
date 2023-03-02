@@ -10,7 +10,6 @@
     'licence': 'AGPL-3',
     'summary': 'Customizations for MFGT',
     'depends': [
-        'account_payment_order', 'account_payment_sale', 'l10n_ch'
     ],
     'data': [
        'report/reports.xml',

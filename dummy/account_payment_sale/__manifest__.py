@@ -5,7 +5,7 @@
     'version': '16.0.0.0',
     'website' : 'https://mfgt.ch',
     'category': 'Hidden/Dependency',
-    'depends' : [
+    'depends' : [ 'sale', 'account_payment_partner'
             ],
     'description': 'A dummy module for updating',
     'data': [
